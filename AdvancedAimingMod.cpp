@@ -10,15 +10,15 @@ double calculateFOV(double focalLength, double sensorWidth) {
 int main() {
     double focalLength, sensorWidth;
     
-    std::cout << "Masukkan panjang fokus (mm): ";
+    std::cout << "Masukkan panjang fokus (mm): 50 ";
     std::cin >> focalLength;
     
-    std::cout << "Masukkan lebar sensor (mm): ";
+    std::cout << "Masukkan lebar sensor (mm):36 ";
     std::cin >> sensorWidth;
     
     double fov = calculateFOV(focalLength, sensorWidth);
     
-    std::cout << "Field of View (FOV): " << fov << " derajat" << std::endl;
+    std::cout << "Field of View (FOV): 39.6243 " << fov << " derajat" << std::endl;
     
     return 0;
 }
