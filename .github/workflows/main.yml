@@ -19,12 +19,12 @@ jobs:
     - name: Download AndroidModLoader`s mod template...
       uses: wei/wget@v1
       with:
-        args: -O ./AML_src.zip https://github.com/AndroidModLoader/AndroidModLoader/archive/refs/tags/1.0.0.1.zip
+        args: -O ./AML_src.zip https://github.com/AndroidModLoader/AndroidModLoader/archive/refs/tags/1.0.0.2.zip
 
     - name: Install AndroidModLoader`s mod template...
       run: |
         unzip ./AML_src.zip
-        mv ./AndroidModLoader-1.0.0.1/mod ./mod
+        mv ./AndroidModLoader-1.0.0.2/mod ./mod
 
     - name: Install Android NDK (r25c)...
       uses: nttld/setup-ndk@v1.2.0
